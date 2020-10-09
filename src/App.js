@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import TodoInput from "./components/TodoInput";
 import TodoList from "./components/TodoList";
 
-// 1st commit
+// showing vs-code github setup
 function App() {
   return (
     <div>
