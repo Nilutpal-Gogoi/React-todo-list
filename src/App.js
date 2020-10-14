@@ -29,7 +29,7 @@ export default class App extends Component {
                 handleChange={this.handleChange} 
                 handleSubmit={this.handleSubmit} 
                 editItem={this.state.editItem}
-              ></TodoInput>
+              ></TodoInput> 
               <TodoList 
                 items={this.state.items} 
                 clearList={this.clearList} 
