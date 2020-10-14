@@ -1,0 +1,1 @@
+This app generally consists of three components namely - todo input and todo list and both of them will be sitting in the app.

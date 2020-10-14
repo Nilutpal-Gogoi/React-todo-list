@@ -1,13 +1,16 @@
-import React, { Component } from "react";
-import Item from "./TodoItem";
+import React, { Component } from 'react'
+import Item from "./TodoItem"
 
 export default class TodoList extends Component {
   render() {
     return (
       <section>
-        <h2> todo list </h2>
+        <h1>
+          hello from Todo list
+        </h1>
         <Item></Item>
       </section>
-    );
+      
+    )
   }
 }
