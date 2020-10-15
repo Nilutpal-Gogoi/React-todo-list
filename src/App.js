@@ -37,13 +37,26 @@ export default class App extends Component {
       items: []
     });
   };
+
+  // The logic here is that we will filter the items that are not equal to the id and replace the items with that filtered items. 
   handleDelete = (id) => {
     const filteredItems = this.state.items.filter(item=>item.id !== id);
     this.setState({
       items: filteredItems
     });
   };
-  handleEdit = (id) => {console.log(`edit ${id}`)}  
+
+  // The logic here is that first we will filter the items that are not equal to the id and then get the specific item that is selected (this is done by "find" ARRAY method)
+  handleEdit = (id) => {
+    const filteredItems = this.state.items.filter(item=> item.id !== id);
+    const selectedItem = this.state.items.find(item => item.id === id);
+    this.setState({
+      items:filteredItems,
+      item:selectedItem.title,
+      id:id,
+      editItem: true
+    })
+  }  
 
   render() {
     return (
