@@ -24,5 +24,5 @@ export default class TodoList extends Component {
       >clear list</button>
      </ul>  
     )
-  }
+  } 
 }
